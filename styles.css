@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@500;800&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+--Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Gray-500: hsl(0, 0%, 42%);
+--Gray-950: hsl(0, 0%, 7%);
+}
+section{
+    max-width: 500px;
+    margin-inline: auto;
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px ridge rgb(172, 171, 171);
+    box-shadow:5px 5px 1px black ;/*creates a shadow 5px to the right and 5px below below the element with a blur radius of 1px*/
+
+}
+
+.container div:first-child img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container div:nth-child(2) h4{
+    display: inline-block;
+    background-color: var(--Yellow);
+    font-size: 1rem;
+    padding: 3px 8px;
+    margin: 1.5rem 0 1rem;
+    border-radius: 3px;
+}
+
+.container div:nth-child(2) p{
+    font-size: 15px;
+    margin-bottom:1rem ;
+}
+
+.container div:nth-child(2) h1{
+    margin-bottom: 1rem;
+    
+}
+.container div:nth-child(2) h1:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+    
+}
+
+.container div:nth-child(2) p.line{
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+.container div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container div:nth-child(3) p{
+   font-weight: bold; 
+   font-size: 1rem;
+} 
+
+
+body{
+    background-color: var(--Yellow);
+    font-family: "Figtree", sans-serif;
+    padding: 5rem 1rem; /*5rem: This sets the padding for the top and bottom,1rem: This sets the padding for the left and right sides */
+
+}
+@media (min-width: 768px){
+    body{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center;
+     color: var(--White);
+     margin-top: 2rem;
+     }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+ p{
+    font-size: 16px;
+ }
+
+ 
